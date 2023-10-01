@@ -3,7 +3,16 @@
     padding : 0;
     margin  : 0;
     box-sizing: border-box;
+  
+   
 }
+
+html{
+    max-width: 1024px;
+    margin:auto ;
+    background-image: linear-gradient(#282828, #121212);
+}
+
 
 
 body
@@ -12,19 +21,22 @@ body
     background-image: url();
     background-size: cover;
     background-position: center;
-    background: url();
     font-family: sans-serif;
+   
+   
 
 }
 
 
 .menu-bar
 {
-    background:rgba(0, 2, 2, 0.904) ;
+    /*background:rgba(0, 2, 2, 0.904);*/
+    background-image: linear-gradient(#595e66, #121212);
     backdrop-filter: blur(50px);
     text-align: center;
     font-size: 1.4em;
- 
+    width: 100%;
+   
 }
 
 
@@ -32,8 +44,8 @@ body
 {
     display: inline-flex;
     list-style: none;
-    color: #500909;
-    padding:0;
+    /*color: #500909;*/
+   
 }
 
 .menu-bar ul li
@@ -41,7 +53,7 @@ body
    padding: 1em;
    top:0;
    left:0;
-   background: #01000f;
+ 
 
 }
 
@@ -55,7 +67,12 @@ body
 .menu-bar ul li:hover
 {
     /*background: #b1b0cc;*/
-    background: #302e6e;
+   
+}
+
+.menu-bar ul li a:hover{
+
+    color:#ff4800;
 }
 
 .menu-bar .fa
@@ -90,11 +107,12 @@ body
 
 .icons{
 
-    font-size: 2.0rem;
-    color:#fff;
+    font-size: 2.5rem;
+   
     cursor: pointer;
     display:none;
-    background: #500909;
+    color: #fff;
+   /* background: #500909;*/
   
 
 }
@@ -136,7 +154,7 @@ body
         
         width: 100%;
         left:0;
-        background: rgba(0,0,0, .1);
+      
         backdrop-filter: blur(50px);
     }
 
@@ -155,11 +173,23 @@ body
 
 .carousel{
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 50vh;
     position: relative;
+   
     
 }
+
+section{
+   
+    margin: 1em;
+
+    border: solid;
+    border-width: 1em;
+    border-color:  linear-gradient(#595e66, #121212);
+   
+}
+
 
 .carousel > ul{
     margin: 0;
@@ -200,16 +230,16 @@ body
     font-size: 4rem;
     top:50%;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, 0.842);
     cursor: pointer;
     border-radius: .25rem;
     padding: 0 0.5rem;
-    background-color: rgba(0,  0 , 0, .1);
+    background-color: rgba(2, 1, 1, 0.342);
 }
 
 .carousel-button:hover,
 .carousel-button:focus{
-    color: white;
+    color:#fd701e;
     background-color: rgba(0,  0 , 0, .2);
 }
 
@@ -232,8 +262,8 @@ body
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
-	right:40px;
+	
+	right:25%;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
@@ -246,3 +276,78 @@ body
 .my-float{
 	margin-top:16px;
 }
+
+
+.text-img{
+
+    margin-top: 2%;
+    border: solid;
+    border-color: #121212;
+
+}
+
+
+.text-img ul{
+
+    display: inline-flex;
+    list-style: none;
+}
+
+
+
+.text-img ul li{
+
+    width: 50%;
+    padding-top: 2em;
+    
+    }
+.text-img ul img{
+
+width:100%;
+
+
+
+}
+
+.text-img  h2{
+
+  margin-left: 1em;
+    
+    
+}
+
+
+
+
+footer {
+    background-image: linear-gradient(#282828, #121212);
+    width: calc(100%);
+    padding: 1rem;
+    bottom: 0;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+/* CONTACT CSS*/
+
+footer a{
+
+   color:#fff;
+
+}
+
+footer a:hover{
+ 
+    color:#ff4800;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #001660;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

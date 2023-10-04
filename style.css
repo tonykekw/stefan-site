@@ -33,31 +33,102 @@ body
     /*background:rgba(0, 2, 2, 0.904);*/
    
     position:static;
+    display:flexbox;
     background-image: linear-gradient(#595e66, #121212);
     backdrop-filter: blur(150px);
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1em;
     width:auto;
     z-index: 100000;
 }
 
+.logo{
+    width: 10%;
+}
+.logo img{
+    width:100%;
+}
 
 #buttons
 {
     display: inline-flex;
     list-style: none;
     /*color: #500909;*/
+    padding: 0;
+    margin:1em;
+    border:solid;
+    border-width: 1px;
+    border-color:#ff4800;
+  
    
 }
 
-.menu-bar ul li
-{
+    .active-contact{
+
+   background-color:#ff4800;
    padding: 1.2em;
    top:0;
    left:0;
- 
+   border:solid;
+   border-width: 1px;
+   border-color:#ff4800;
+   border-right: transparent;
+   padding-right:2em;   
+   padding-left: 2em;  
+    }
+
+    .menu-bar .active-contact a{
+        color:#000;
+    }
+
+    .menu-bar #buttons .active-contact:hover a{
+
+        color:#ff4800;
+       
+        transition: 0.6s;
+        transition-duration: 0.2ms;
+
+    }
+
+    .menu-bar #buttons .active-contact:hover{
+
+       
+        background-color: #000;
+        transition: 0.6s;
+
+    }
+
+    
+ .active
+    {
+
+   padding: 1.2em;
+   padding-left: 2em;  
+   padding-right:2em;
+   top:0;
+   left:0;
+   background-color: rgba(0,  0 , 0, .2);
+
+  
+    }
+
+.menu-bar #buttons .active:hover a{
+
+    color:#000;
+    transition: 0.6s;
+    transition-duration: 0.2ms;
 
 }
+
+.menu-bar #buttons .active:hover{
+
+   
+    background-color: #fff;
+    transition: 0.6s;
+
+}
+
+
 
 .menu-bar ul li a
 {
@@ -68,14 +139,7 @@ body
 
 }
 
-
-.menu-bar ul li:hover
-{
-    /*background: #b1b0cc;*/
-   
-}
-
-.menu-bar ul li a:hover{
+.active a:hover{
 
     color:#ff4800;
 }
@@ -85,21 +149,13 @@ body
     margin-right: auto;
 }
 
-
-.menu-bar::before{
-
-   
-    
-   
-
-}
-
-
 @media (max-width: 992px){
 .menu-bar{
    /* padding: 1.3rem 5%;*/
 }
 }
+
+
 
 
 #check
@@ -119,6 +175,26 @@ body
 
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	right:4%;
+	background-color:#fa692f;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    display: none;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
 
 @media (max-width: 768px){
     .icons{
@@ -126,6 +202,7 @@ body
         width: 100%;
         top:0;
         left:0;
+        color:#ff4800
     }
 
     .icons #close-icon{
@@ -150,6 +227,9 @@ body
    
     #buttons{
         display:none;
+        border: none;
+      
+       
     }
     
     .menu-bar{
@@ -170,6 +250,42 @@ body
         text-align: center;
        
     }
+
+    .float{
+        display: block;
+    }
+    
+    .active-contact{
+
+        background-color:#ff4800;
+        padding: 1.2em;
+        top:0;
+        left:0;
+        border:none;
+     
+     
+         }
+     
+         .menu-bar .active-contact a{
+             color:#000;
+         }
+     
+         .menu-bar #buttons .active-contact:hover a{
+     
+            
+            
+     
+         }
+     
+         .menu-bar #buttons .active-contact:hover{
+     
+            
+        
+     
+         }
+
+       
+    
 }
 
 
@@ -260,23 +376,6 @@ section{
 }
 
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	right:25%;
-	background-color:#fa692f;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-    z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
 
 .enum{
 

@@ -1,53 +1,189 @@
 <!DOCTYPE html>
-
-<html>
-    
-<head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tencuieli</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>Tencuieli xD</title> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <script src="script.js" defer> </script>
+  </head>
+  <body>
+    <nav>
 
-</head>
+      <div>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Stefan Site</label>
+      <ul>
+        <li><a class="active" href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-user"></i> About</a></li>
+        <li><a href="#"><i class="fa fa-users"></i>  Services</a></li>
+        <li><a href="#"><i class="fa fa-dollar"></i> Feedback</a></li>
+        <li><a href="#" class="active-contact"><i class="fa fa-phone"></i>  Contact</a></li>
+      
+      </ul>
 
-<body>
-
-    <div class="menu-bar">  
-        <input type="checkbox" id="check">
-    <label for="check" class="icons">    
-        <i class="fa fa-bars" id="menu-icon"></i> 
-        <i class="fa fa-times" id="close-icon"></i> 
-    </label>
-  
-
+      </div>
+    </nav>
    
-<ul id="buttons">
-<li class="active"><a href="index.html"><i class="fa fa-home"></i> Home</a> </li>
-<li  class="active"><a href="#"><i class="fa fa-user"></i> About Us</a></li>
-<li  class="active"><a href="#"><i class="fa fa-users"></i> Clients</a></li>
-<li  class="active"><a href="#"><i class="fa fa-dollar"></i> Pricing</a></li>
-<li  class="active"><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+
+
+    <section aria-label="Newest Photos"> 
+
+        <div class="carousel" data-carousel>
+
+
+            <button class="carousel-button prev" data-carousel-button="prev">  <i class="fa fa-arrow-left"></i></button>
+
+            <button class="carousel-button next" data-carousel-button="next">  <i class="fa fa-arrow-right"></i></button>
+            
+        <ul data-slides>
+
+            <li class="slide" data-active>
+                <img src="./img/poza.jpeg" alt="Eren Image #1">
+            </li>
+            <li class="slide" >
+                <img src="./img/poza2.jpeg" alt="Eren Image #2">
+            </li>
+            <li class="slide" >
+                <img src="./img/poza3.jpeg" alt="Eren Image #3">
+            </li>
+
+        </ul>
+    </div>
+    </section>
+
+    <div class="container-text">
+      <h2>
+          Lorem Ipsum Dolor
+      </h2>
+  <p>
+
+      Echipa TGM-Tencuieli, executa lucrari de tencuiala mecanizata la cele mai inalte standarde de calitate, oferindu-va cele mai avantajoase oferte.
+      Tencuala mecanizata este aplicata de catre echipele noastre de profesionisti in finisaje interioare si exterioare, cu ajutorul utilajelor profesionale de tencuit.
+  </p>
+
+  </div>
+
+
+  <div>
+  <a href="https://api.whatsapp.com/send?phone=+393497277038&text=Ciao." class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+      </a>
+  </div>
+
+<hr>
+  
+<div class="container-emum" >
+
+
+
+      <h2>
+          Lorem Ipsum Dol
+      </h2>
+  <ul class="enum">
+
+          <li>
+              Lorem ipsum
+          </li>
+
+          <li>
+                  Lorem ipsum
+          </li>
+
+          <li>
+              Lorem ipsum
+      </li>
+
+  </ul>
+
+  <ul class="enum">
+
+      <li>
+          Lorem ipsum
+      </li>
+
+      <li>
+              Lorem ipsum
+      </li>
+
+      <li>
+          Lorem ipsum
+  </li>
 
 </ul>
 
 </div>
+      
+
+  
+
+<hr>
+
+  <div class="text-img">
+
+      <h2>Lorem Ipsum</h2>
+
+      <ul>
+          <li>
+
+              
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus nulla, egestas quis tortor vitae, feugiat vehicula metus. Maecenas non pellentesque lacus. 
+              Nullam euismod diam justo, sit amet tincidunt tortor porttitor in. Etiam sed dolor vel orci hendrerit eleifend. Nullam viverra sit amet nunc vitae imperdiet.
+               Nulla facilisi. Morbi sit amet arcu hendrerit, eleifend velit at, facilisis ligula. Fusce ornare ac felis eu imperdiet.
+               Sed pretium consequat justo, vitae condimentum felis semper a. Sed sagittis tincidunt lacus, quis blandit diam ornare eget. Phasellus posuere urna accumsan, 
+               lobortis nisi id, pretium neque. 
+
+            
+          </li>
+         <li>
+
+          <img src="./img/masina.jpeg" alt="Strument">
+         </li>
+
+      </ul>
+
+      
+      <ul>
+          <li>
+
+              
+              <img src="./img/poza.jpeg" alt="Strument">
+
+            
+          </li>
+         <li>
+
+          <img src="./img/poza2.jpeg" alt="Strument">
+         </li>
+
+      </ul>
 
 
-<div class="container">
 
-
-</div>
-
-
-
-</body>
+  </div>
 
 
 
+
+    <footer>
+        <p> <a href="contact.html">Contact Imediat</a> | Aperti ogni giorno dalle 17:00 alle 01:00 | <span lang="en"> Copyright 2023 </span> 
+            <a href="#" class="fa fa-facebook"></a>
+            <i class="fa fa-tik tok"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-tiktok"></i>
+    
+
+        </p>
+    </footer>
+  </body>
 </html>

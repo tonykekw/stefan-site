@@ -60,7 +60,7 @@ body
     border-width: 1px;
     border-color:#ff4800;
   
-   
+
 }
 
     .active-contact{
@@ -164,9 +164,9 @@ body
 }
 
 .icons{
-
-    font-size: 2.5rem;
    
+    font-size: 2.5rem;
+ 
     cursor: pointer;
     display:none;
     color: #fff;
@@ -199,7 +199,7 @@ body
 
    
     display:flexbox;
-    background-color: rgba(252, 83, 5, 0.89);
+    background-color: rgba(0,  0 , 0, .2);
     margin: auto;
     text-align: center;
     font-size: 1em;
@@ -217,12 +217,22 @@ body
         padding: 1em;      
         width: 100%;
         margin: auto;
-     
+      
+       
+      
 }
 
 .enum li {
     display: inline-flex;
     padding: 2em;
+}
+
+
+
+.container-text{    
+    padding: 1em;
+    text-align: center;
+    margin: auto;
 }
 
 @media (max-width: 768px){
@@ -251,7 +261,7 @@ body
 
 
     #check:checked~.icons #close-icon{
-
+        transition-delay: 2s;
         display:block;
     }
 
@@ -263,15 +273,15 @@ body
     #buttons{
         display:none;
         border: none;
-      
+  
+       
        
     }
     
     .menu-bar{
         
         width: 100%;
-        left:0;
-      
+       
         backdrop-filter: blur(50px);
     }
 
@@ -283,6 +293,7 @@ body
         font-size: 1.1rem;
         margin:1.5rem 0;
         text-align: center;
+        
        
     }
 
@@ -294,15 +305,18 @@ body
 
         background-color:#ff4800;
         padding: 1.2em;
-        top:0;
-        left:0;
+        
         border:none;
-     
+       
      
          }
      
          .menu-bar .active-contact a{
              color:#000;
+         }
+
+         .active{
+            background-color: inherit;
          }
      
          .menu-bar #buttons .active-contact:hover a{
@@ -486,3 +500,6 @@ footer a:hover{
     justify-content: center;
 }
 
+
+
+/* contact nav */

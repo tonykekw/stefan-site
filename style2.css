@@ -8,24 +8,33 @@
   
    
 }
+:root{
 
+  --width-content:1200px;
+}
 html{
-    max-width: 1200px;
+    max-width:  var(--width-content);
     margin:auto ;
    background-color: #bdc1c6;
 }
+
 body
 {
     background-color:  #fff;
     background-size: cover;
     background-position: center;
+    
 }
 
 
-  nav{
+   nav{
     background-image: linear-gradient(#595e66, #121212);
     height: 80px;
-    width: 100%;
+    width: 100% ;
+    position:fixed;
+    display: flex;
+    top:0;
+    z-index: 4;
   }
 
   label.logo{
@@ -270,9 +279,9 @@ width:100%;
     background-color: rgba(0,  0 , 0, .2);
     margin: auto;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
     width:50%;
-    color: #FFF;
+    color: #000;
 }
 
 
@@ -292,13 +301,13 @@ width:100%;
 
 .enum li {
     display: inline-flex;
-    padding: 2em;
+    padding: 1.4em;
 }
 
 
 
 .container-text{    
-    padding: 1em;
+    padding: 4em;
     text-align: center;
     margin: auto;
 }
@@ -325,6 +334,11 @@ footer a:hover{
  
     color:#ff4800;
 }
+
+
+
+
+
 
 
 
@@ -377,5 +391,10 @@ footer a:hover{
       left: 0;
      bottom:inherit;
       
+    }
+
+    .container-emum{
+
+    width: 100%;
     }
   }

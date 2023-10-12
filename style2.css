@@ -13,7 +13,7 @@
   --width-content:1200px;
 }
 html{
-    max-width:  var(--width-content);
+   /* max-width:  var(--width-content); */
     margin:auto ;
    background-color: #bdc1c6;
 }
@@ -29,10 +29,10 @@ body
 
    nav{
     background-image: linear-gradient(#595e66, #121212);
-    height: 80px;
+    height: 100px;
     width: 100% ;
-    position:fixed;
-    display: flex;
+    position:relative;
+    
     top:0;
     z-index: 4;
   }
@@ -40,7 +40,7 @@ body
   label.logo{
     color: white;
     font-size: 35px;
-    line-height: 80px;
+    line-height: 100px;
     /*padding: 0 100px;*/
     padding: 1em;
     font-weight: bold;
@@ -52,7 +52,7 @@ body
   }
   nav ul li{
     display: inline-block;
-    line-height: 80px;
+    line-height: 100px;
     margin: 0 5px;
  
   }
@@ -214,8 +214,9 @@ section{
 .text-img{
 
     margin-top: 2%;
-    border: solid;
-    border-color: #ff4800;
+   /* border: solid;
+    border-color: #ff4800;*/
+  
 
 }
 
@@ -240,7 +241,6 @@ section{
 width:100%;
 
 
-
 }
 
 .text-img  h2{
@@ -257,6 +257,7 @@ width:100%;
 	width:60px;
 	height:60px;
 	right:4%;
+  bottom: 5%;
 	background-color:#fa692f;
 	color:#FFF;
 	border-radius:50px;
@@ -275,8 +276,9 @@ width:100%;
 .container-emum{
 
    
-    display:flexbox;
-    background-color: rgba(0,  0 , 0, .2);
+
+   /* background-color: rgba(0,  0 , 0, .2);*/
+    background-color: #fff;
     margin: auto;
     text-align: center;
     font-size: 1.2em;
@@ -327,7 +329,11 @@ width:100%;
 footer a{
 
    color:#fff;
-
+ 
+}
+footer a i{
+  float: right;
+  padding: 0.2em;
 }
 
 footer a:hover{
@@ -358,11 +364,17 @@ footer a:hover{
     .float{
         display: block;
     }
-    
+    .text-img ul{
+
+      display: block;
+    }
     
     .checkbtn{
         
       display: block;
+    }
+    nav{
+      position: fixed;
     }
     nav ul{
       position: fixed;

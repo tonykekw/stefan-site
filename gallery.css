@@ -8,7 +8,7 @@
   }
     
   html{
-    max-width: 1200px;
+    max-width: 1100px;
     margin:auto ;
    background-color: #bdc1c6;
 
@@ -17,6 +17,97 @@
   body {
     margin: 0;
   }
+
+  nav{
+    background-image: linear-gradient(#595e66, #121212);
+    height: 100px;
+    width: 100% ;
+    position:relative;
+    
+    top:0;
+    z-index: 4;
+  }
+
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 100px;
+    /*padding: 0 100px;*/
+    padding: 1em;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+ 
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+ 
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 1em;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  nav a:hover{
+    background: #fff;
+    color: #000;
+    transition: .5s;
+  }
+
+
+  .active-contact{
+
+    background-color:#ff4800;
+   
+    top:0;
+    left:0;
+    border:solid;
+    border-width: 1px;
+    border-color:#ff4800;
+   
+    padding-right:2em;   
+    padding-left: 2em;  
+     }
+ 
+     nav .active-contact a{
+         color:#ff4800;
+     }
+ 
+     nav .active-contact:hover{
+ 
+         color:#ff4800;
+        
+         transition: 0.6s;
+         transition-duration: 0.2ms;
+ 
+     }
+ 
+     nav .active-contact:hover{
+ 
+        
+         background-color: #000;
+         transition: 0.6s;
+ 
+     }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  
   
   .container {
     display: flex;
@@ -25,7 +116,7 @@
   }
   
   .slider {
-    --items-per-screen: 4;
+    --items-per-screen: 3;
     --slider-index: 0;
     display: flex;
     flex-grow: 1;
@@ -37,6 +128,7 @@
   .slider > img {
     flex: 0 0 calc(100% / var(--items-per-screen));
     max-width: calc(100% / var(--items-per-screen));
+    height: 30rem;
     aspect-ratio: 16 / 9;
     padding: var(--img-gap);
     border-radius: 1rem;
@@ -47,7 +139,7 @@
     border-radius: 1rem;
     flex-grow: 0;
     flex-shrink: 0;
-    background-color: rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, 0.322);
     z-index: 10;
     margin: var(--img-gap) 0;
     width: var(--handle-size);
@@ -73,7 +165,7 @@
   
   .handle:hover,
   .handle:focus {
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(216, 70, 12, 0.952);
   }
   
   .text {
@@ -100,6 +192,7 @@
   .progress-bar {
     display: flex;
     gap: .25rem;
+  
   }
   
   .progress-item {
@@ -113,15 +206,118 @@
     background-color: rgba(255, 255, 255, .9);
   }
   
+
+
+  footer {
+    background-image: linear-gradient(#595e66, #121212);
+    width: calc(100%);
+    padding: 1rem;
+    bottom: 0;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+footer a{
+
+   color:#fff;
+ 
+}
+footer a i{
+  float: right;
+  padding: 0.2em;
+}
+
+footer a:hover{
+ 
+    color:#ff4800;
+}
+
+
+
+
+
+
+
   @media (max-width: 1000px) {
     .slider {
       --items-per-screen: 3;
     }
   }
+
+    
+@media (max-width: 852px){
+  .slider {
+    --items-per-screen:2;
+  }
+
+}
   
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .slider {
       --items-per-screen: 2;
+    }
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 860px){
+    
+    .float{
+        display: block;
+    }
+    .text-img ul{
+
+      display: block;
+    }
+    
+    .checkbtn{
+        
+      display: block;
+    }
+    nav{
+     
+      z-index: 1000;
+    }
+    nav ul{
+      position: fixed;
+      width: 100%;
+      height:100%;
+      background-image: linear-gradient(#595e66, #121212);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 3;
+    }
+    nav ul li{
+      display: block;
+     margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+    
+    }
+    #check:checked ~ ul{
+      left: 0;
+     bottom:inherit;
+      
+    }
+
+    .container-emum{
+
+    width: 100%;
     }
   }
   
